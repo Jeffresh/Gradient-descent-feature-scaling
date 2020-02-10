@@ -1,9 +1,16 @@
-function X_normalized = feature_scaling_mean_normalization(X,deno_option)
+function X_normalized = feature_scaling_mean_normalization(X,denominator_option)
 %feature_scaling_mean_normalization 
 % Mixing of the two techniques, feature scaling and mean normalization
 % the dominator can be std or max - min.
 % returns X normalized.
-outputArg1 = inputArg1;
-outputArg2 = inputArg2;
+
+nsamples = size(X,1);
+
+mu = repmat(mean(X),nsamples,1);
+
+s = denominator_option(X);
+
+X_normalized = (X - mu)./s;
+
 end
 
