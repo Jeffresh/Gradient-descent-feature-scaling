@@ -8,10 +8,7 @@ A way to speed up gradient descent is having each feature in the same range. The
 
 Being ![equation](/assets/si.png) = ![equation](/assets/max-min.png) or ![equation](/assets/si.png) = ![equation](/assets/std.png).
 
-Adn being ![equation](/assets/i.png) the number of the feature.
+And being ![equation](/assets/i.png) the number of the feature.
 
 So in this repo you will find a vectorized implementation of the above described.
 
-### Introduction
-
-# IN CONSTRUCTION
